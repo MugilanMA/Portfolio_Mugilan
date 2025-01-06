@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem auto;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill, .project {
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            text-align: left;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav>
+        <div>My Portfolio</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Section 1: Name and Photo -->
+    <div class="section" id="home">
+        <h1>Mugilan M A</h1>
+        <img src="./WhatsApp Image 2025-01-06 at 9.55.32 AM.jpeg" alt="Your Photo" class="photo">
+    </div>
+
+    <!-- Section 2: About and Education -->
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a Mugilan, passionate about technology and innovation. I enjoy solving complex problems and creating impactful solutions.With hands-on experience in developing efficient, scalable solutions and a keen interest in technology, I am eager to contribute to impactful projects and grow alongside a dynamic team. My focus on adaptability and lifelong learning ensures I stay up-to-date with industry trends and deliver value in every opportunity I undertake.</p>
+        <h2>Education</h2>
+        <h3>Saveetha Engineering College</h3>
+        <p>Bachelor of Engineering in Electronics and Communication</p>
+        <p>CGPA 7.61</p>
+        <h3>Bharathidhasanar Mat Hr Sec School</h3>
+        <p>HSC 80.8%</p>
+        <h3>Dr.V.Genguswamy Matric Hr Sec School</h3>
+        <p>SSCL 90.4%</p>
+        <p></p>
+    </div>
+
+    <!-- Section 3: Skills -->
+    <div class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">JAVA</div>
+            <div class="skill">SQL</div>
+        </div>
+    </div>
+
+    <!-- Section 4: Projects -->
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>AI Based talking and virtual eye for visionless people.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Hand Gesture recognition using MATLAB.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: Contact Me -->
+    <div class="section" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Mugilan M A" required>
+            <input type="email" placeholder="mamugilan310@gmail.com" required>
+            <input type="Phone no" placeholder="9345509389" required>
+        </form>
+    </div>
+
+</body>
+</html>
